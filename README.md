@@ -2,7 +2,6 @@
 
 > **GTM Outreach Automator** is a production-grade AI product designed to instantly generate highly tailored text outputs for sales and marketing outreach. It streamlines the Go-To-Market workflow by ensuring every communication is personalized, professional, and optimized for conversion.
 
-![GTM Outreach](https://via.placeholder.com/1200x600/0f172a/ffffff?text=GTM+Outreach+Automator)
 
 ## System Architecture
 
