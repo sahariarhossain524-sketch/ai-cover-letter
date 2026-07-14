@@ -1,10 +1,10 @@
-# GTM Outreach Automator (AI Sales Assistant) 🚀✉️
+# GTM Outreach Automator (AI Sales Assistant)
 
 > **GTM Outreach Automator** is a production-grade AI product designed to instantly generate highly tailored text outputs for sales and marketing outreach. It streamlines the Go-To-Market workflow by ensuring every communication is personalized, professional, and optimized for conversion.
 
 ![GTM Outreach](https://via.placeholder.com/1200x600/0f172a/ffffff?text=GTM+Outreach+Automator)
 
-## 🏗️ System Architecture
+## System Architecture
 
 Built for scale and reliability, this application focuses on abstracting prompt engineering complexities away from the end-user.
 
@@ -15,7 +15,7 @@ Built for scale and reliability, this application focuses on abstracting prompt 
 - **Styling:** Tailwind CSS + Lucide React
 - **Architecture:** Client-side Custom Hooks (`useCoverLetterGenerator`) interfacing with secure Server-Side API Routes.
 
-## 🧠 Prompt Engineering & LLM Integration
+## Prompt Engineering & LLM Integration
 
 The core value of this application lies in its highly structured Prompt Engineering architecture.
 
@@ -24,7 +24,7 @@ The core value of this application lies in its highly structured Prompt Engineer
 - **Hallucination Prevention:** Strict instruction sets force the LLM to output ONLY the final text without conversational filler, and placeholders are only left if the data is genuinely missing from the source context.
 - **Decoupled Business Logic:** The client-side UI is completely decoupled from the fetching and state management logic via the `useCoverLetterGenerator` hook, allowing for easy testing and iteration.
 
-## 🛠️ Setup & Installation
+## Setup & Installation
 
 1. Clone the repository
 2. Install dependencies: `npm install`
@@ -34,7 +34,7 @@ The core value of this application lies in its highly structured Prompt Engineer
    ```
 4. Run the development server: `npm run dev`
 
-## 👨‍💻 Developed By
+## Developed By
 
 **Sahariar Hossain**  
 *AI Product Engineer & Full-Stack Developer*  
