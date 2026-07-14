@@ -39,7 +39,7 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ coverLetter: response.text });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Error generating cover letter:', error);
     return NextResponse.json(
       { error: 'Failed to generate cover letter. Please try again.' },

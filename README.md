@@ -1,70 +1,41 @@
-<div align="center">
-  <br />
-    <a href="https://ai-cover-letter-nu-nine.vercel.app/" target="_blank">
-      <img src="https://img.shields.io/badge/Live_Demo-View_Project-1E90FF?style=for-the-badge&logo=vercel" alt="Live Demo" />
-    </a>
-  <br />
-  <br />
+# GTM Outreach Automator (AI Sales Assistant) 🚀✉️
 
-  <h1>🤖 Smart AI Cover Letter Generator</h1>
-  
-  <p>
-    A Next.js web application powered by Google Gemini AI. It takes a user's resume and a job description to instantly generate highly tailored, professional cover letters. Features a modern UI built with Tailwind CSS.
-  </p>
-</div>
+> **GTM Outreach Automator** is a production-grade AI product designed to instantly generate highly tailored text outputs for sales and marketing outreach. It streamlines the Go-To-Market workflow by ensuring every communication is personalized, professional, and optimized for conversion.
 
----
+![GTM Outreach](https://via.placeholder.com/1200x600/0f172a/ffffff?text=GTM+Outreach+Automator)
 
-## 🚀 Features
+## 🏗️ System Architecture
 
-- **AI-Powered Generation**: Integrates seamlessly with the Gemini API to produce context-aware cover letters.
-- **Instant Personalization**: Upload your resume and job description to get a completely tailored letter in seconds.
-- **Sleek Interface**: A clean, distraction-free modern UI built with Tailwind CSS.
-- **Export Ready**: One-click copy/paste formatting for immediate application submission.
-- **Lightning Fast**: Built on Next.js App Router for optimal performance.
+Built for scale and reliability, this application focuses on abstracting prompt engineering complexities away from the end-user.
 
-## 💻 Tech Stack
+### Tech Stack
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **AI Integration:** Google Gemini 2.5 Flash API
+- **Styling:** Tailwind CSS + Lucide React
+- **Architecture:** Client-side Custom Hooks (`useCoverLetterGenerator`) interfacing with secure Server-Side API Routes.
 
-| Technology | Description |
-|------------|-------------|
-| **Next.js** | Core React framework and routing engine |
-| **React** | Component-driven UI development |
-| **Tailwind CSS** | Rapid, utility-first styling |
-| **Google Gemini API** | Advanced LLM integration for text generation |
-| **Vercel** | Edge-optimized deployment |
+## 🧠 Prompt Engineering & LLM Integration
 
-## 🛠️ Installation & Setup
+The core value of this application lies in its highly structured Prompt Engineering architecture.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/sahariarhossain524-sketch/ai-cover-letter.git
-   ```
+- **Dynamic Persona Injection:** The system acts as an "expert career coach and professional copywriter," adopting a tone that is confident, professional, and enthusiastic.
+- **Context Synthesis:** The backend API (`/api/generate/route.ts`) securely cross-references the user's Resume with the Job Description to extract matching keywords and relevant experiences.
+- **Hallucination Prevention:** Strict instruction sets force the LLM to output ONLY the final text without conversational filler, and placeholders are only left if the data is genuinely missing from the source context.
+- **Decoupled Business Logic:** The client-side UI is completely decoupled from the fetching and state management logic via the `useCoverLetterGenerator` hook, allowing for easy testing and iteration.
 
-2. **Navigate to the directory**
-   ```bash
-   cd ai-cover-letter
-   ```
+## 🛠️ Setup & Installation
 
-3. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-4. **Environment Variables**
-   Create a `.env.local` file and add your Gemini API key:
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Create a `.env.local` file and add your API Key:
    ```env
-   NEXT_PUBLIC_GEMINI_API_KEY=your_api_key_here
+   GEMINI_API_KEY=your_api_key_here
    ```
+4. Run the development server: `npm run dev`
 
-5. **Start the development server**
-   ```bash
-   npm run dev
-   ```
+## 👨‍💻 Developed By
 
-## 🌐 Live Demo
-Check out the live deployment here: [https://ai-cover-letter-nu-nine.vercel.app/](https://ai-cover-letter-nu-nine.vercel.app/)
-
-<hr />
-<div align="center">
-  <sub>Built by <b>Sahariar Hossain</b> (AI-Assisted Full Stack Developer)</sub>
-</div>
+**Sahariar Hossain**  
+*AI Product Engineer & Full-Stack Developer*  
+Specializing in AI-native internal tools, intelligent automation, and LLM-powered operational software.

@@ -2,44 +2,17 @@
 
 import { useState } from "react";
 import { Sparkles, FileText, Briefcase, Copy, CheckCircle2, Loader2 } from "lucide-react";
+import { useCoverLetterGenerator } from "@/hooks/useCoverLetterGenerator";
 
 export default function Home() {
   const [resume, setResume] = useState("");
   const [jobDescription, setJobDescription] = useState("");
-  const [generatedLetter, setGeneratedLetter] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [error, setError] = useState("");
+  
+  const { generate, isLoading, error, generatedLetter } = useCoverLetterGenerator();
 
-  const handleGenerate = async () => {
-    if (!resume || !jobDescription) {
-      setError("Please provide both your resume and the job description.");
-      return;
-    }
-
-    setIsLoading(true);
-    setError("");
-    setGeneratedLetter("");
-
-    try {
-      const response = await fetch("/api/generate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ resume, jobDescription }),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || "Something went wrong");
-      }
-
-      setGeneratedLetter(data.coverLetter);
-    } catch (err: any) {
-      setError(err.message);
-    } finally {
-      setIsLoading(false);
-    }
+  const handleGenerate = () => {
+    generate(resume, jobDescription);
   };
 
   const copyToClipboard = () => {
