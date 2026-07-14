@@ -28,13 +28,14 @@ export default function Home() {
           <div className="inline-flex items-center justify-center p-3 bg-emerald-100 dark:bg-emerald-900/30 rounded-2xl mb-4">
             <Sparkles className="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
-            Smart Cover Letter <span className="text-emerald-600 dark:text-emerald-400">AI</span>
-          </h1>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Generate highly tailored, professional cover letters in seconds using the power of Google Gemini AI. 
-            Perfectly match your skills to the job requirements.
-          </p>
+          <div className="text-center space-y-4">
+            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+              GTM Outreach <span className="text-emerald-600 dark:text-emerald-400">Automator</span>
+            </h1>
+            <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+              Generate highly tailored, professional outreach messages in seconds using the power of Google Gemini AI. 
+            </p>
+          </div>
         </header>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">

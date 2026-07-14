@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Smart AI Cover Letter Generator",
-  description: "Generate highly tailored, professional cover letters instantly using Google Gemini AI.",
+  title: "GTM Outreach Automator | AI Sales Assistant",
+  description: "Generate highly tailored, professional outreach messages instantly using Google Gemini AI.",
 };
 
 export default function RootLayout({
